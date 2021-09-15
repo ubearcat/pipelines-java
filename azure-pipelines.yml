@@ -4,18 +4,7 @@
 # https://docs.microsoft.com/azure/devops/pipelines/languages/java
 
 trigger:
-- main
-
-
-strategy:
-  matrix:
-    linux:
-      imageName: "ubuntu-latest"
-    mac:
-      imageName: "macOS-latest"
-    windows:
-      imageName: "windows-latest"
-  maxParallel: 3
+- test
 
 pool:
   vmImage: ubuntu-latest
